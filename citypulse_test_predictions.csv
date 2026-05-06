@@ -1,0 +1,401 @@
+,borough,complaint_type,severity,weather,impact,complaints,accessibility,priority_score,true_tier,pred_rf,pred_lr
+1378,Manhattan,Street Condition,2.72,1.2,1.54,1.29,0.9,6.99,Medium,High,Medium
+757,Staten Island,Sidewalk Condition,2.49,1.4,1.33,1.13,1.03,6.98,Medium,Medium,Medium
+1764,Brooklyn,Pothole,3.97,1.2,2.35,1.18,1.17,9.46,High,High,High
+195,Brooklyn,Sidewalk Condition,2.02,1.2,2.54,1.56,1.12,7.64,High,High,High
+791,Queens,Pothole,3.52,1.1,1.82,1.04,0.67,7.4,High,High,High
+1833,Brooklyn,Street Condition,3.15,1.3,2.12,1.26,0.82,8.3,High,High,High
+622,Staten Island,Pothole,4.14,1.0,2.23,1.05,1.48,8.9,High,High,High
+104,Bronx,Street Condition,3.41,1.2,1.96,1.35,0.66,8.06,High,High,High
+1392,Brooklyn,Street Light Condition,1.48,1.1,3.0,1.04,1.34,7.01,High,Medium,Medium
+403,Brooklyn,Sidewalk Condition,1.77,1.2,2.56,1.13,0.73,6.54,Medium,Medium,Medium
+947,Bronx,Sidewalk Condition,2.28,1.3,1.18,1.0,1.17,6.31,Medium,Medium,Medium
+1306,Manhattan,Pothole,4.5,1.0,2.29,1.07,1.46,9.32,High,High,High
+1701,Staten Island,Pothole,3.6,1.2,1.09,1.12,0.87,7.4,High,High,High
+206,Brooklyn,Sidewalk Condition,1.69,1.1,1.89,1.36,1.02,6.13,Medium,Medium,Medium
+549,Queens,Pothole,3.78,1.1,0.07,1.01,1.07,6.31,Medium,Medium,Medium
+1010,Manhattan,Pothole,3.73,1.0,1.95,1.03,1.0,7.71,High,High,High
+1207,Queens,Pothole,4.43,1.0,1.89,0.87,1.19,8.38,High,High,High
+1698,Staten Island,Pothole,4.35,1.0,1.19,0.95,0.94,7.43,High,High,High
+1625,Manhattan,Street Condition,3.11,1.0,1.42,1.53,1.08,7.14,High,High,High
+1584,Manhattan,Street Light Condition,1.22,1.2,1.82,1.46,0.84,5.58,Medium,Medium,Medium
+1746,Manhattan,Pothole,3.68,1.2,3.0,1.27,1.26,9.95,High,High,High
+367,Manhattan,Street Condition,3.09,1.1,1.94,1.09,0.52,6.95,Medium,Medium,Medium
+754,Manhattan,Sidewalk Condition,2.42,1.2,2.61,1.17,0.73,7.41,High,High,High
+1990,Brooklyn,Street Light Condition,1.0,1.2,2.15,1.71,1.5,6.56,Medium,Medium,Medium
+1162,Bronx,Pothole,3.63,1.2,1.82,1.24,1.47,8.89,High,High,High
+631,Bronx,Street Condition,2.95,1.0,0.93,1.25,1.07,6.2,Medium,Medium,Medium
+1426,Brooklyn,Pothole,4.45,1.5,2.98,0.29,1.44,11.38,Critical,High,Critical
+248,Queens,Street Condition,2.7,1.2,1.31,1.5,0.0,6.05,Medium,Medium,Medium
+1862,Staten Island,Sidewalk Condition,2.15,1.0,1.59,1.23,1.65,6.62,Medium,Medium,Medium
+737,Queens,Street Condition,2.55,1.2,2.07,1.31,0.0,6.44,Medium,High,Medium
+192,Brooklyn,Sidewalk Condition,2.05,1.0,2.06,1.65,0.73,6.49,Medium,Medium,Medium
+1505,Queens,Street Condition,2.86,1.3,1.02,1.3,0.99,7.03,High,Medium,Medium
+764,Bronx,Pothole,3.94,1.1,0.96,1.92,1.4,8.61,High,High,High
+1236,Brooklyn,Street Light Condition,1.0,1.1,1.11,1.58,0.78,4.57,Medium,Medium,Medium
+874,Manhattan,Pothole,4.02,1.1,2.09,1.25,1.44,9.2,High,High,High
+125,Queens,Street Condition,2.65,1.1,0.52,1.36,0.73,5.52,Medium,Medium,Medium
+1869,Bronx,Street Condition,2.7,1.3,1.27,1.48,1.91,8.17,High,High,High
+1882,Queens,Sidewalk Condition,2.29,1.1,1.32,1.85,1.39,7.08,High,High,Medium
+720,Queens,Street Condition,2.95,1.1,1.47,0.88,0.9,6.5,Medium,Medium,Medium
+1724,Queens,Sidewalk Condition,2.3,1.4,1.64,1.25,1.13,7.24,High,Medium,High
+664,Queens,Street Condition,3.08,1.1,1.74,1.22,0.81,7.16,High,High,High
+613,Staten Island,Sidewalk Condition,1.97,1.0,1.45,1.52,1.07,6.01,Medium,Medium,Medium
+1018,Brooklyn,Pothole,4.1,1.0,2.26,1.41,1.21,8.98,High,High,High
+1212,Manhattan,Sidewalk Condition,2.46,1.3,1.62,1.85,0.93,7.6,High,High,High
+1759,Bronx,Pothole,3.55,1.2,1.45,1.73,1.73,9.17,High,High,High
+1183,Brooklyn,Pothole,4.17,1.1,1.14,0.81,0.91,7.45,High,High,High
+223,Staten Island,Pothole,3.65,1.0,1.28,1.01,0.79,6.73,Medium,Medium,Medium
+106,Queens,Sidewalk Condition,2.21,1.5,1.4,1.2,0.17,6.08,Medium,Medium,Medium
+1892,Manhattan,Street Condition,3.02,1.0,1.96,1.49,1.02,7.49,High,High,High
+32,Queens,Pothole,4.14,1.0,1.66,1.13,0.45,7.38,High,High,High
+1108,Staten Island,Pothole,4.01,1.1,1.84,1.25,1.24,8.74,High,High,High
+361,Brooklyn,Pothole,4.04,1.2,1.12,1.11,1.19,8.27,High,High,High
+265,Brooklyn,Pothole,4.01,1.4,2.23,1.25,0.24,9.33,High,High,High
+1381,Brooklyn,Sidewalk Condition,2.2,1.1,1.43,0.97,1.37,6.19,Medium,Medium,Medium
+1863,Queens,Pothole,4.23,1.2,2.16,0.98,0.58,8.8,High,High,High
+5,Staten Island,Sidewalk Condition,1.68,1.2,0.64,0.2,0.84,3.7,Low,Low,Low
+618,Brooklyn,Sidewalk Condition,1.95,1.1,1.77,0.75,1.17,5.84,Medium,Medium,Medium
+771,Manhattan,Sidewalk Condition,1.9,1.2,2.02,1.61,0.79,6.7,Medium,Medium,Medium
+1341,Bronx,Sidewalk Condition,1.54,1.1,1.03,1.54,2.0,6.26,Medium,Medium,Medium
+218,Bronx,Street Light Condition,1.48,1.0,1.04,2.0,1.48,6.0,Medium,Medium,Medium
+23,Bronx,Pothole,4.4,1.4,1.34,1.34,1.64,10.48,High,High,High
+1158,Queens,Street Light Condition,1.0,1.0,2.63,1.73,1.09,6.45,Medium,Medium,Medium
+1643,Brooklyn,Pothole,3.88,1.3,1.27,0.97,1.11,8.39,High,High,High
+1673,Brooklyn,Pothole,4.05,1.2,2.27,2.0,0.86,9.99,High,High,High
+1120,Manhattan,Pothole,4.12,1.1,2.0,1.54,0.0,8.07,High,High,High
+1687,Queens,Street Light Condition,1.0,1.3,1.57,0.9,1.07,4.84,Medium,Medium,Medium
+272,Brooklyn,Sidewalk Condition,2.31,1.2,2.17,1.36,0.74,7.04,High,High,Medium
+1066,Queens,Street Condition,3.12,1.3,0.37,1.01,1.62,7.06,High,Medium,Medium
+1578,Staten Island,Sidewalk Condition,2.35,1.0,1.74,0.25,1.47,5.81,Medium,Medium,Medium
+1773,Bronx,Sidewalk Condition,2.03,1.5,2.4,1.5,0.93,7.88,High,High,High
+103,Staten Island,Street Light Condition,1.0,1.4,0.0,0.7,0.9,3.0,Low,Medium,Low
+1279,Manhattan,Pothole,4.23,1.3,2.21,1.97,0.24,9.92,High,High,High
+169,Staten Island,Street Condition,2.96,1.3,1.12,0.5,0.67,6.14,Medium,Medium,Medium
+362,Brooklyn,Street Condition,3.16,1.2,0.98,1.22,0.79,6.78,Medium,High,Medium
+1297,Brooklyn,Street Condition,2.74,1.0,1.9,1.21,1.11,6.96,Medium,High,Medium
+137,Queens,Sidewalk Condition,2.36,1.0,1.62,0.69,0.96,5.63,Medium,Medium,Medium
+1993,Brooklyn,Pothole,4.41,1.4,1.05,1.37,0.4,8.99,High,High,High
+1920,Queens,Pothole,3.97,1.3,1.4,0.97,1.75,9.28,High,High,High
+633,Queens,Street Condition,2.77,1.2,1.45,0.92,1.61,7.3,High,High,High
+936,Staten Island,Pothole,3.86,1.4,0.28,0.9,1.56,8.14,High,High,High
+759,Queens,Street Condition,3.43,1.1,0.96,0.88,0.88,6.49,Medium,Medium,Medium
+1616,Brooklyn,Street Condition,2.94,1.1,1.66,1.81,1.6,8.3,High,High,High
+1523,Manhattan,Street Condition,3.17,1.0,2.09,1.14,0.48,6.88,Medium,High,Medium
+1418,Bronx,Pothole,3.65,1.2,1.46,2.0,1.82,9.66,High,High,High
+1645,Queens,Sidewalk Condition,1.73,1.1,1.33,0.75,0.7,4.68,Medium,Medium,Medium
+569,Queens,Street Light Condition,1.08,1.4,2.05,1.35,1.36,6.27,Medium,Medium,Medium
+829,Brooklyn,Sidewalk Condition,2.41,1.3,1.94,0.9,0.93,6.9,Medium,Medium,Medium
+245,Bronx,Pothole,3.76,1.0,2.13,1.42,1.34,8.65,High,High,High
+1849,Manhattan,Pothole,4.29,1.3,0.6,1.51,0.89,8.58,High,High,High
+44,Bronx,Street Light Condition,1.0,1.2,1.98,1.64,1.78,6.6,Medium,Medium,Medium
+1834,Brooklyn,Pothole,4.05,1.2,1.81,1.37,0.83,8.87,High,High,High
+243,Queens,Pothole,4.01,1.3,2.1,1.31,1.06,9.68,High,High,High
+1359,Brooklyn,Sidewalk Condition,2.32,1.3,2.08,1.1,0.78,6.98,Medium,High,Medium
+822,Brooklyn,Pothole,4.16,1.2,1.69,0.72,1.44,8.84,High,High,High
+1271,Queens,Street Condition,3.38,1.4,1.19,1.17,0.88,7.97,High,High,High
+1058,Queens,Pothole,4.1,1.2,2.73,1.92,1.79,11.36,Critical,High,Critical
+1433,Brooklyn,Pothole,3.93,1.0,1.9,1.26,0.54,7.63,High,High,High
+659,Queens,Pothole,3.66,1.2,1.86,1.22,0.96,8.43,High,High,High
+1710,Bronx,Sidewalk Condition,2.27,1.2,1.98,1.15,1.48,7.33,High,High,High
+958,Queens,Pothole,3.86,1.1,2.34,1.32,0.79,8.7,High,High,High
+300,Bronx,Street Light Condition,1.0,1.1,2.03,1.56,0.83,5.52,Medium,Medium,Medium
+1065,Staten Island,Street Condition,3.01,1.4,2.08,0.27,1.76,8.32,High,High,High
+851,Brooklyn,Street Condition,3.23,1.1,0.86,1.97,0.71,7.09,High,High,High
+419,Bronx,Street Light Condition,1.01,1.3,1.35,1.67,0.48,4.81,Medium,Medium,Medium
+1039,Brooklyn,Street Condition,3.26,1.5,2.46,0.75,1.03,9.13,High,High,High
+897,Brooklyn,Pothole,4.01,1.0,2.52,1.6,1.2,9.33,High,High,High
+267,Brooklyn,Street Condition,3.32,1.4,1.92,0.5,1.28,8.35,High,High,High
+1077,Queens,Street Condition,2.65,1.5,2.44,0.73,1.02,8.16,High,High,High
+299,Manhattan,Sidewalk Condition,2.19,1.5,0.96,0.64,1.12,6.0,Medium,Medium,Medium
+320,Bronx,Pothole,4.32,1.1,2.35,1.26,2.0,10.36,High,High,Critical
+370,Manhattan,Street Condition,2.78,1.4,1.59,1.32,0.68,7.48,High,High,High
+787,Queens,Street Condition,3.25,1.3,1.38,1.33,0.57,7.51,High,High,High
+1794,Bronx,Street Condition,3.27,1.2,1.57,1.54,1.0,8.03,High,High,High
+1917,Manhattan,Street Condition,3.28,1.0,2.49,1.01,0.8,7.58,High,High,High
+90,Brooklyn,Street Condition,2.6,1.0,1.01,1.15,0.9,5.66,Medium,Medium,Medium
+1454,Queens,Street Light Condition,1.43,1.5,1.84,0.9,0.55,5.44,Medium,Medium,Medium
+1204,Brooklyn,Street Light Condition,1.0,1.2,2.73,1.37,1.18,6.48,Medium,Medium,Medium
+775,Bronx,Street Condition,2.57,1.1,1.78,1.81,1.76,8.18,High,High,High
+1445,Manhattan,Pothole,3.77,1.3,1.66,1.86,0.44,8.86,High,High,High
+1409,Manhattan,Pothole,4.32,1.1,3.0,0.79,1.32,9.86,High,High,High
+559,Queens,Pothole,4.2,1.1,1.49,1.77,1.23,9.11,High,High,High
+1979,Brooklyn,Sidewalk Condition,2.17,1.2,1.9,1.33,0.97,6.8,Medium,Medium,Medium
+1588,Brooklyn,Sidewalk Condition,1.99,1.2,1.28,1.29,1.11,6.07,Medium,Medium,Medium
+1865,Bronx,Pothole,3.83,1.2,0.58,1.83,1.51,8.52,High,High,High
+978,Queens,Sidewalk Condition,2.31,1.3,1.31,1.51,0.36,6.18,Medium,Medium,Medium
+1743,Staten Island,Street Condition,3.4,1.4,0.92,1.09,0.9,7.67,High,High,High
+52,Bronx,Street Condition,3.05,1.4,1.46,1.19,1.35,8.27,High,High,High
+365,Queens,Sidewalk Condition,1.62,1.1,1.07,1.08,0.33,4.26,Medium,Medium,Low
+1241,Queens,Street Condition,2.79,1.1,3.0,1.19,0.9,8.16,High,High,High
+345,Bronx,Pothole,4.45,1.2,1.49,1.91,1.0,9.74,High,High,High
+474,Brooklyn,Street Condition,3.0,1.0,2.04,1.06,1.01,7.11,High,High,High
+236,Queens,Pothole,3.88,1.2,1.95,1.3,1.13,9.04,High,High,High
+54,Manhattan,Pothole,4.33,1.0,1.34,1.46,0.22,7.35,High,High,High
+665,Manhattan,Sidewalk Condition,1.91,1.3,1.69,1.61,1.39,7.17,High,Medium,High
+175,Brooklyn,Street Condition,3.06,1.5,1.93,1.69,1.71,9.92,High,High,Critical
+31,Staten Island,Street Condition,2.86,1.2,1.95,0.65,1.08,7.11,High,High,High
+687,Staten Island,Sidewalk Condition,1.95,1.4,1.61,0.73,1.1,6.17,Medium,Medium,Medium
+1624,Queens,Sidewalk Condition,1.51,1.2,0.98,0.36,0.11,3.26,Low,Low,Low
+651,Bronx,Street Condition,3.3,1.5,1.26,1.6,1.55,9.36,High,High,High
+1906,Queens,Sidewalk Condition,2.14,1.2,0.76,2.0,1.12,6.45,Medium,Medium,Medium
+429,Bronx,Sidewalk Condition,1.53,1.0,1.42,1.17,1.1,5.22,Medium,Medium,Medium
+22,Staten Island,Pothole,3.81,1.0,1.89,0.23,1.13,7.06,High,High,High
+239,Brooklyn,Street Condition,3.16,1.2,2.02,0.55,1.08,7.44,High,High,High
+1394,Bronx,Sidewalk Condition,1.93,1.4,1.75,1.33,0.68,6.46,Medium,Medium,Medium
+178,Bronx,Pothole,4.15,1.1,1.81,1.88,1.14,9.4,High,High,High
+1617,Manhattan,Pothole,4.34,1.3,2.45,0.86,1.25,10.2,High,High,High
+1774,Manhattan,Sidewalk Condition,1.72,1.3,1.37,1.03,1.15,5.79,Medium,Medium,Medium
+924,Brooklyn,Pothole,3.97,1.1,2.2,0.36,0.99,7.92,High,High,High
+448,Brooklyn,Street Condition,3.05,1.3,1.68,1.43,0.75,7.82,High,High,High
+904,Staten Island,Street Condition,3.21,1.2,0.39,0.87,0.5,5.61,Medium,Medium,Medium
+1080,Brooklyn,Pothole,3.67,1.4,1.7,0.98,0.85,8.67,High,High,High
+625,Queens,Street Condition,3.12,1.4,1.63,1.1,0.93,8.03,High,High,High
+309,Brooklyn,Sidewalk Condition,2.13,1.3,1.52,0.91,0.79,5.99,Medium,Medium,Medium
+1343,Manhattan,Pothole,4.08,1.0,2.15,1.21,1.59,9.03,High,High,High
+159,Manhattan,Pothole,3.71,1.5,1.44,1.3,1.03,9.33,High,High,High
+1273,Manhattan,Sidewalk Condition,2.36,1.1,1.59,1.83,0.97,6.99,Medium,Medium,Medium
+959,Queens,Street Light Condition,1.21,1.4,1.66,0.91,1.13,5.39,Medium,Medium,Medium
+1330,Bronx,Street Light Condition,1.27,1.1,1.37,0.95,0.72,4.44,Medium,Medium,Medium
+1992,Queens,Pothole,4.46,1.0,1.85,0.98,2.0,9.29,High,High,High
+1936,Queens,Pothole,3.74,1.1,0.78,1.16,1.08,7.13,High,High,High
+1246,Manhattan,Pothole,4.01,1.4,1.44,1.47,0.46,8.98,High,High,High
+1542,Queens,Sidewalk Condition,2.1,1.2,1.33,1.31,0.68,5.84,Medium,Medium,Medium
+1494,Queens,Pothole,4.36,1.4,1.43,1.42,2.0,10.95,High,High,Critical
+916,Brooklyn,Pothole,4.25,1.1,2.03,1.37,1.79,9.86,High,High,High
+1960,Manhattan,Pothole,3.51,1.0,1.82,1.34,1.1,7.77,High,High,High
+1796,Manhattan,Street Condition,3.02,1.1,2.5,0.95,1.12,7.89,High,High,High
+974,Queens,Street Condition,3.08,1.2,1.46,0.62,1.36,7.14,High,High,High
+1373,Bronx,Pothole,4.1,1.4,2.2,1.41,0.9,10.25,High,High,High
+1042,Manhattan,Sidewalk Condition,1.82,1.0,2.23,1.48,1.03,6.56,Medium,Medium,Medium
+1413,Staten Island,Pothole,3.69,1.2,0.9,0.51,0.88,6.72,Medium,High,Medium
+465,Manhattan,Sidewalk Condition,1.65,1.4,2.28,1.23,1.44,7.26,High,Medium,High
+421,Brooklyn,Pothole,3.68,1.2,0.99,0.7,0.94,7.05,High,High,Medium
+1914,Brooklyn,Street Condition,2.76,1.4,2.61,0.72,0.89,8.08,High,High,High
+70,Brooklyn,Sidewalk Condition,1.89,1.4,1.55,0.78,0.48,5.46,Medium,Medium,Medium
+1242,Queens,Street Light Condition,1.0,1.3,1.75,1.54,0.96,5.55,Medium,Medium,Medium
+1545,Queens,Street Condition,2.79,1.1,1.75,1.86,0.71,7.39,High,High,High
+1569,Queens,Pothole,4.38,1.5,1.74,0.22,0.23,8.76,High,High,High
+710,Staten Island,Street Light Condition,1.29,1.0,0.01,0.83,0.91,3.04,Low,Low,Low
+677,Queens,Sidewalk Condition,1.63,1.4,2.18,0.78,1.13,6.37,Medium,Medium,Medium
+1159,Bronx,Pothole,3.8,1.0,2.2,1.84,1.0,8.84,High,High,High
+986,Queens,Pothole,4.13,1.2,2.11,1.13,1.19,9.39,High,High,High
+1145,Queens,Street Condition,3.33,1.3,2.07,1.01,0.83,8.24,High,High,High
+452,Manhattan,Street Condition,3.15,1.2,2.12,1.72,1.66,9.28,High,High,High
+1755,Manhattan,Pothole,4.11,1.4,1.89,1.74,0.98,10.36,High,High,High
+427,Bronx,Sidewalk Condition,1.64,1.1,1.65,1.91,0.93,6.29,Medium,Medium,Medium
+331,Brooklyn,Street Condition,3.44,1.5,2.21,1.17,1.33,9.87,High,High,High
+436,Brooklyn,Street Condition,3.33,1.2,2.04,1.15,1.1,8.29,High,High,High
+814,Brooklyn,Pothole,3.93,1.2,2.42,0.97,1.34,9.45,High,High,High
+304,Bronx,Street Condition,2.51,1.3,1.53,2.0,1.81,8.6,High,High,High
+408,Brooklyn,Pothole,4.38,1.2,1.03,1.32,0.78,8.39,High,High,High
+850,Brooklyn,Street Condition,2.7,1.5,1.12,1.41,1.37,7.95,High,High,High
+1844,Brooklyn,Street Light Condition,1.0,1.0,2.77,0.7,1.65,6.12,Medium,Medium,Medium
+1858,Brooklyn,Sidewalk Condition,2.05,1.4,1.47,0.66,1.51,6.51,Medium,Medium,Medium
+756,Queens,Sidewalk Condition,1.92,1.3,1.23,0.81,1.44,5.98,Medium,Medium,Medium
+1312,Manhattan,Street Condition,2.85,1.2,1.96,1.2,0.56,7.14,High,High,High
+749,Bronx,Pothole,3.61,1.3,0.98,1.13,1.75,8.55,High,High,High
+1679,Queens,Pothole,3.87,1.5,1.82,0.55,1.38,9.56,High,High,High
+1329,Brooklyn,Pothole,3.84,1.2,1.69,1.87,0.95,9.12,High,High,High
+437,Queens,Sidewalk Condition,1.74,1.1,2.38,1.08,0.66,6.03,Medium,Medium,Medium
+1202,Bronx,Street Light Condition,1.0,1.0,0.08,1.16,1.59,3.83,Low,Medium,Low
+1285,Staten Island,Street Condition,2.61,1.4,1.31,0.65,1.81,7.42,High,High,High
+1634,Staten Island,Street Condition,2.61,1.0,1.14,0.99,1.6,6.34,Medium,Medium,Medium
+960,Queens,Sidewalk Condition,1.66,1.1,1.76,1.24,1.18,6.01,Medium,Medium,Medium
+1067,Manhattan,Pothole,3.86,1.5,2.33,1.74,1.01,10.87,High,High,Critical
+1776,Manhattan,Sidewalk Condition,2.21,1.1,2.45,0.74,0.46,6.08,Medium,Medium,Medium
+1099,Brooklyn,Pothole,4.36,1.0,1.91,0.87,1.15,8.29,High,High,High
+1479,Queens,Street Condition,3.5,1.4,1.6,0.65,1.28,8.43,High,High,High
+509,Brooklyn,Street Condition,2.82,1.2,2.07,0.86,1.11,7.42,High,High,High
+466,Manhattan,Sidewalk Condition,1.67,1.1,3.0,1.19,0.17,6.2,Medium,Medium,Medium
+1079,Queens,Pothole,4.22,1.5,2.58,1.01,0.65,10.57,High,High,High
+1767,Brooklyn,Pothole,4.12,1.1,1.51,2.0,0.53,8.57,High,High,High
+1040,Brooklyn,Street Condition,2.74,1.3,1.71,0.61,1.16,7.04,High,High,Medium
+333,Bronx,Pothole,3.97,1.2,2.51,1.6,0.5,9.37,High,High,High
+411,Manhattan,Street Light Condition,1.0,1.3,1.34,0.67,0.88,4.19,Medium,Medium,Medium
+1071,Manhattan,Street Light Condition,1.0,1.1,1.19,2.0,1.41,5.7,Medium,Medium,Medium
+940,Brooklyn,Street Light Condition,1.36,1.3,2.64,0.76,1.05,6.22,Medium,Medium,Medium
+266,Brooklyn,Sidewalk Condition,1.92,1.0,0.97,1.34,0.87,5.1,Medium,Medium,Medium
+190,Staten Island,Pothole,3.58,1.4,2.42,0.77,0.95,9.15,High,High,High
+1832,Queens,Street Condition,2.83,1.0,0.83,1.39,0.58,5.63,Medium,Medium,Medium
+1053,Brooklyn,Sidewalk Condition,1.62,1.2,1.09,1.34,1.08,5.45,Medium,Medium,Medium
+147,Queens,Street Light Condition,1.19,1.1,1.69,1.51,0.92,5.43,Medium,Medium,Medium
+1720,Brooklyn,Street Condition,3.26,1.0,1.75,1.7,1.07,7.78,High,High,High
+1886,Brooklyn,Street Light Condition,1.0,1.1,2.17,1.65,0.43,5.35,Medium,Medium,Medium
+1850,Brooklyn,Street Condition,3.49,1.2,1.52,1.22,0.68,7.61,High,High,High
+563,Manhattan,Street Condition,3.31,1.5,1.41,1.39,1.2,8.96,High,High,High
+1402,Staten Island,Street Condition,2.88,1.1,0.0,1.11,0.35,4.63,Medium,Medium,Medium
+1878,Queens,Pothole,4.21,1.5,1.05,0.34,0.93,8.64,High,High,High
+1344,Staten Island,Street Condition,2.8,1.1,1.26,0.44,0.93,5.71,Medium,Medium,Medium
+1422,Queens,Sidewalk Condition,2.29,1.1,0.81,1.29,0.49,5.11,Medium,Medium,Medium
+336,Brooklyn,Sidewalk Condition,1.52,1.2,2.09,1.28,0.7,5.89,Medium,Medium,Medium
+1907,Brooklyn,Sidewalk Condition,2.12,1.4,1.67,1.23,1.87,7.74,High,High,High
+36,Brooklyn,Street Light Condition,1.0,1.4,1.69,0.51,0.77,4.37,Medium,Medium,Medium
+526,Staten Island,Street Light Condition,1.22,1.1,2.54,0.7,1.07,5.65,Medium,Medium,Medium
+1618,Staten Island,Pothole,4.11,1.3,0.5,0.91,1.32,8.07,High,High,High
+1915,Brooklyn,Pothole,4.09,1.5,1.31,1.04,1.19,9.67,High,High,High
+1799,Manhattan,Pothole,3.9,1.1,2.44,0.84,0.83,8.4,High,High,High
+6,Manhattan,Street Condition,3.0,1.3,1.41,0.72,1.03,7.06,High,Medium,Medium
+1168,Bronx,Pothole,3.62,1.2,0.93,2.0,0.68,7.95,High,High,High
+1459,Queens,Sidewalk Condition,1.56,1.3,0.58,1.43,0.54,4.58,Medium,Medium,Medium
+1310,Queens,Street Light Condition,1.0,1.1,0.71,1.31,1.41,4.53,Medium,Medium,Medium
+1535,Queens,Sidewalk Condition,2.25,1.5,1.6,1.09,0.91,6.98,Medium,Medium,Medium
+153,Manhattan,Sidewalk Condition,1.97,1.1,1.88,0.69,0.96,5.7,Medium,Medium,Medium
+47,Brooklyn,Street Condition,2.77,1.0,0.78,1.43,1.19,6.17,Medium,Medium,Medium
+964,Staten Island,Pothole,3.74,1.0,0.93,1.06,1.47,7.2,High,High,High
+1615,Brooklyn,Sidewalk Condition,1.73,1.4,1.6,0.86,0.58,5.46,Medium,Medium,Medium
+1504,Bronx,Sidewalk Condition,2.37,1.2,1.64,1.68,1.54,7.7,High,High,High
+1309,Staten Island,Pothole,3.78,1.1,0.68,0.9,1.52,7.26,High,High,High
+1967,Bronx,Pothole,3.79,1.4,1.91,1.27,1.74,10.23,High,High,High
+1784,Brooklyn,Street Condition,2.74,1.1,1.4,1.68,1.11,7.2,High,High,High
+937,Brooklyn,Pothole,4.22,1.2,1.02,1.47,0.74,8.29,High,High,High
+663,Brooklyn,Pothole,3.58,1.4,2.14,1.1,1.37,9.62,High,High,High
+211,Manhattan,Street Condition,2.86,1.3,2.69,1.76,0.18,8.35,High,High,High
+808,Queens,Pothole,3.94,1.2,1.56,1.3,1.35,8.94,High,High,High
+647,Queens,Sidewalk Condition,1.72,1.0,1.8,1.01,1.79,6.32,Medium,Medium,Medium
+638,Bronx,Sidewalk Condition,1.68,1.3,2.03,1.18,0.77,6.16,Medium,Medium,Medium
+900,Queens,Street Condition,3.0,1.1,1.37,0.25,1.83,6.75,Medium,Medium,Medium
+1655,Queens,Pothole,3.7,1.3,1.66,1.56,1.44,9.47,High,High,High
+782,Queens,Street Condition,3.42,1.2,1.92,0.97,1.31,8.3,High,High,High
+635,Brooklyn,Street Condition,2.55,1.1,2.6,1.89,1.29,8.59,High,High,High
+1695,Queens,Street Condition,2.79,1.2,1.05,1.29,1.41,7.1,High,High,High
+1835,Brooklyn,Street Condition,2.6,1.1,1.58,1.97,1.17,7.58,High,High,High
+329,Brooklyn,Street Condition,3.42,1.1,2.19,1.37,0.78,8.1,High,High,High
+1975,Brooklyn,Pothole,3.72,1.4,1.67,0.54,0.78,8.2,High,High,High
+326,Bronx,Pothole,3.56,1.4,0.82,1.82,1.38,9.0,High,High,High
+841,Bronx,Street Condition,2.92,1.5,1.93,1.25,1.33,8.89,High,High,High
+324,Bronx,Pothole,3.7,1.2,1.11,1.71,1.21,8.47,High,High,High
+1290,Queens,Street Condition,2.83,1.1,1.34,1.19,0.82,6.46,Medium,Medium,Medium
+1887,Brooklyn,Sidewalk Condition,1.66,1.1,3.0,1.94,1.06,7.83,High,High,High
+15,Brooklyn,Street Condition,3.05,1.0,2.4,0.67,1.02,7.14,High,High,High
+389,Bronx,Pothole,4.08,1.1,1.22,1.71,1.21,8.63,High,High,High
+694,Bronx,Sidewalk Condition,1.9,1.2,1.62,1.7,1.66,7.26,High,Medium,High
+999,Brooklyn,Pothole,4.12,1.3,2.8,0.69,0.58,9.43,High,High,High
+935,Brooklyn,Street Condition,2.65,1.3,1.8,1.13,1.61,7.98,High,High,High
+110,Queens,Street Condition,2.82,1.0,1.1,0.44,0.84,5.2,Medium,Medium,Medium
+1571,Manhattan,Pothole,3.52,1.5,1.9,1.77,1.33,10.28,High,High,Critical
+817,Queens,Street Condition,3.0,1.0,1.99,1.47,0.32,6.78,Medium,High,Medium
+1997,Queens,Street Condition,3.32,1.2,0.37,0.98,0.97,6.3,Medium,Medium,Medium
+1706,Brooklyn,Pothole,4.4,1.0,2.77,0.99,0.89,9.05,High,High,High
+164,Manhattan,Sidewalk Condition,2.14,1.4,2.05,1.9,0.99,7.94,High,High,High
+849,Staten Island,Street Condition,3.28,1.5,1.28,1.36,0.91,8.47,High,High,High
+1322,Brooklyn,Sidewalk Condition,2.36,1.1,2.16,1.39,0.68,6.83,Medium,High,Medium
+316,Queens,Pothole,4.43,1.2,1.18,0.78,1.16,8.44,High,High,High
+1137,Queens,Pothole,3.54,1.1,2.45,1.24,0.92,8.5,High,High,High
+1331,Queens,Pothole,4.24,1.4,1.44,0.99,1.19,9.56,High,High,High
+1987,Manhattan,Street Condition,2.88,1.5,0.93,1.21,1.19,7.65,High,High,High
+666,Bronx,Sidewalk Condition,2.31,1.4,1.78,1.96,1.31,8.28,High,High,High
+1538,Bronx,Pothole,3.87,1.0,1.32,1.65,0.8,7.64,High,High,High
+1140,Queens,Pothole,4.12,1.2,0.16,1.12,1.46,7.68,High,High,High
+1365,Queens,Pothole,4.45,1.0,1.42,0.87,1.12,7.86,High,High,High
+152,Brooklyn,Sidewalk Condition,1.94,1.1,2.21,0.89,2.0,7.23,High,High,High
+115,Bronx,Street Light Condition,1.0,1.3,2.27,2.0,0.94,6.51,Medium,Medium,Medium
+1805,Manhattan,Pothole,4.23,1.3,2.4,1.28,0.0,9.18,High,High,High
+1078,Manhattan,Street Condition,2.85,1.0,2.3,1.29,1.09,7.53,High,High,High
+961,Queens,Street Light Condition,1.0,1.0,1.58,1.47,1.87,5.92,Medium,Medium,Medium
+548,Manhattan,Pothole,4.23,1.3,1.55,1.15,0.72,8.92,High,High,High
+692,Brooklyn,Sidewalk Condition,2.23,1.4,2.69,2.0,0.44,8.25,High,High,High
+306,Queens,Street Condition,3.05,1.3,1.19,1.04,1.18,7.37,High,High,High
+487,Brooklyn,Sidewalk Condition,1.61,1.3,1.91,1.1,1.09,6.19,Medium,Medium,Medium
+1467,Brooklyn,Pothole,3.64,1.0,2.06,0.97,2.0,8.67,High,High,High
+1480,Queens,Street Condition,2.53,1.2,1.47,1.51,1.03,7.05,High,High,Medium
+349,Brooklyn,Pothole,4.33,1.3,1.19,1.61,1.61,10.04,High,High,High
+1854,Bronx,Street Condition,2.54,1.1,1.58,1.09,1.3,6.76,Medium,High,Medium
+1325,Bronx,Sidewalk Condition,1.65,1.1,1.11,0.89,1.55,5.36,Medium,Medium,Medium
+671,Manhattan,Street Condition,2.81,1.1,3.0,2.0,0.84,8.93,High,High,High
+1055,Manhattan,Street Condition,2.77,1.1,2.28,1.46,0.48,7.27,High,High,High
+1648,Bronx,Pothole,3.93,1.1,2.39,1.99,0.71,9.41,High,High,High
+1196,Brooklyn,Street Condition,2.94,1.0,1.86,1.31,1.45,7.56,High,High,High
+1619,Brooklyn,Street Light Condition,1.0,1.4,3.0,1.4,1.64,7.44,High,High,High
+644,Manhattan,Pothole,3.77,1.2,2.64,1.39,0.55,9.1,High,High,High
+1177,Queens,Street Condition,2.5,1.5,1.62,0.71,0.93,7.01,High,High,Medium
+1870,Queens,Street Condition,3.14,1.0,1.75,1.12,0.79,6.8,Medium,High,Medium
+1261,Queens,Sidewalk Condition,2.09,1.4,2.41,0.72,0.97,7.03,High,Medium,High
+590,Bronx,Sidewalk Condition,1.74,1.1,1.2,1.68,0.7,5.49,Medium,Medium,Medium
+1540,Bronx,Sidewalk Condition,2.46,1.5,1.14,1.14,1.78,7.75,High,High,High
+35,Brooklyn,Sidewalk Condition,1.89,1.4,0.37,1.1,1.53,5.65,Medium,Medium,Medium
+733,Queens,Pothole,3.74,1.3,1.68,0.83,0.99,8.36,High,High,High
+220,Queens,Street Condition,2.68,1.2,2.07,0.98,0.86,7.13,High,High,High
+1466,Queens,Street Condition,3.3,1.1,0.99,0.83,1.07,6.52,Medium,Medium,Medium
+1495,Manhattan,Sidewalk Condition,1.75,1.3,1.43,1.94,0.6,6.24,Medium,Medium,Medium
+279,Bronx,Street Condition,3.2,1.0,1.56,0.8,1.21,6.77,Medium,High,Medium
+630,Bronx,Pothole,3.77,1.3,2.05,1.18,1.4,9.53,High,High,High
+63,Manhattan,Pothole,4.09,1.2,1.96,0.92,0.78,8.57,High,High,High
+703,Bronx,Sidewalk Condition,1.87,1.0,1.41,1.83,1.36,6.47,Medium,Medium,Medium
+1637,Bronx,Pothole,4.21,1.5,0.83,2.0,1.76,10.9,High,High,Critical
+1446,Bronx,Sidewalk Condition,2.33,1.2,1.98,1.71,1.03,7.52,High,High,High
+1738,Queens,Sidewalk Condition,2.41,1.0,1.17,1.32,1.11,6.01,Medium,Medium,Medium
+314,Queens,Street Condition,2.5,1.3,1.65,0.7,1.16,6.76,Medium,Medium,Medium
+697,Manhattan,Pothole,3.98,1.0,1.13,1.29,1.13,7.53,High,High,High
+87,Queens,Pothole,4.12,1.1,1.14,1.13,1.47,8.27,High,High,High
+1437,Queens,Pothole,3.7,1.1,1.97,0.98,1.01,8.03,High,High,High
+244,Manhattan,Street Condition,3.22,1.0,2.22,1.36,0.39,7.19,High,High,High
+1045,Queens,Street Light Condition,1.5,1.5,1.78,2.0,1.41,7.44,High,Medium,High
+1809,Brooklyn,Sidewalk Condition,2.25,1.0,2.97,1.24,1.43,7.89,High,High,High
+1599,Brooklyn,Street Condition,2.97,1.2,0.72,1.17,0.57,6.02,Medium,Medium,Medium
+739,Queens,Street Condition,3.14,1.1,1.04,0.7,0.88,6.07,Medium,Medium,Medium
+1388,Bronx,Street Condition,2.96,1.0,0.48,1.32,1.02,5.78,Medium,Medium,Medium
+1874,Bronx,Street Light Condition,1.0,1.2,1.5,1.58,1.78,6.06,Medium,Medium,Medium
+1831,Staten Island,Street Condition,2.8,1.3,0.89,0.06,1.42,6.01,Medium,Medium,Medium
+612,Staten Island,Street Condition,3.18,1.2,1.81,0.0,0.98,6.61,Medium,High,Medium
+1472,Brooklyn,Street Condition,3.44,1.1,0.79,1.33,1.53,7.43,High,High,High
+80,Manhattan,Street Condition,2.87,1.0,1.63,1.17,0.99,6.66,Medium,Medium,Medium
+998,Staten Island,Street Light Condition,1.0,1.4,1.88,0.61,0.67,4.56,Medium,Medium,Medium
+1070,Bronx,Pothole,3.79,1.3,1.76,1.29,0.96,8.94,High,High,High
+765,Brooklyn,Street Light Condition,1.0,1.2,2.07,0.91,1.27,5.45,Medium,Medium,Medium
+1626,Queens,Sidewalk Condition,2.23,1.5,1.25,0.94,0.77,6.3,Medium,Medium,Medium
+779,Bronx,Pothole,4.16,1.3,2.34,1.77,2.0,11.52,Critical,High,Critical
+868,Brooklyn,Street Light Condition,1.0,1.2,1.73,1.1,0.92,4.95,Medium,Medium,Medium
+176,Queens,Street Condition,3.11,1.3,1.5,0.71,0.49,6.74,Medium,Medium,Medium
+546,Queens,Street Light Condition,1.48,1.0,2.0,0.41,0.49,4.38,Medium,Medium,Low
+987,Brooklyn,Street Condition,2.69,1.0,2.01,1.23,1.06,6.99,Medium,High,Medium
+504,Queens,Pothole,3.63,1.3,0.72,1.04,1.49,7.97,High,High,High
+323,Queens,Pothole,3.56,1.0,1.09,1.65,1.04,7.34,High,High,High
+407,Bronx,Pothole,3.88,1.1,1.0,1.65,1.35,8.27,High,High,High
+1810,Brooklyn,Street Condition,3.01,1.0,2.17,1.64,0.58,7.4,High,High,High
+1553,Queens,Street Condition,2.68,1.1,1.2,0.31,0.9,5.36,Medium,Medium,Medium
+1611,Bronx,Pothole,4.21,1.3,1.47,1.16,1.33,9.43,High,High,High
+1258,Queens,Street Condition,2.93,1.3,1.1,0.75,0.68,6.34,Medium,Medium,Medium
+819,Brooklyn,Street Light Condition,1.05,1.5,2.26,1.85,1.14,6.82,Medium,Medium,High
+1703,Manhattan,Sidewalk Condition,2.26,1.2,2.66,1.69,1.19,8.25,High,High,High
+1502,Queens,Pothole,3.61,1.0,1.25,0.66,1.34,6.86,Medium,Medium,Medium
+1234,Brooklyn,Pothole,4.21,1.2,2.14,0.78,1.82,9.79,High,High,High
+843,Queens,Pothole,3.93,1.1,1.34,0.43,1.05,7.14,High,High,High
+1463,Queens,Pothole,4.24,1.4,1.48,1.41,1.04,9.87,High,High,High
+396,Bronx,Pothole,3.68,1.3,1.9,1.28,2.0,9.96,High,High,High
+308,Brooklyn,Street Condition,3.44,1.1,2.24,0.85,1.21,8.08,High,High,High
+146,Queens,Pothole,3.53,1.3,1.49,1.42,1.17,8.67,High,High,High
+751,Queens,Sidewalk Condition,2.03,1.1,2.05,0.88,1.04,6.2,Medium,Medium,Medium
+3,Manhattan,Sidewalk Condition,1.74,1.0,2.23,0.74,0.9,5.61,Medium,Medium,Medium
+1240,Bronx,Sidewalk Condition,1.64,1.2,2.11,1.5,1.9,7.48,High,High,High
+1144,Queens,Sidewalk Condition,1.83,1.4,2.28,1.44,0.82,7.1,High,Medium,High
+1423,Queens,Street Condition,2.51,1.2,1.25,0.49,0.92,5.67,Medium,Medium,Medium
+1266,Brooklyn,Pothole,3.83,1.1,2.1,1.08,0.86,8.25,High,High,High
+1366,Brooklyn,Sidewalk Condition,1.93,1.0,1.92,1.33,0.79,5.97,Medium,Medium,Medium
+208,Brooklyn,Pothole,3.95,1.0,1.29,0.87,0.65,6.76,Medium,High,Medium
+1727,Bronx,Pothole,3.82,1.1,0.39,1.73,2.0,8.32,High,High,High
+1352,Brooklyn,Pothole,4.16,1.5,1.43,2.0,1.13,10.8,High,High,High
+1171,Manhattan,Sidewalk Condition,2.13,1.2,2.12,1.42,0.76,6.86,Medium,Medium,Medium
+1316,Manhattan,Sidewalk Condition,1.54,1.4,1.61,1.28,0.0,5.05,Medium,Medium,Medium
+1022,Staten Island,Street Condition,3.38,1.1,0.13,1.34,1.66,6.85,Medium,Medium,Medium
+1187,Staten Island,Sidewalk Condition,2.03,1.1,2.06,0.99,1.46,6.74,Medium,Medium,Medium
+591,Queens,Sidewalk Condition,2.0,1.3,1.8,1.25,0.83,6.48,Medium,Medium,Medium
+1741,Brooklyn,Pothole,4.14,1.2,0.81,1.49,0.94,8.21,High,High,High
+1509,Manhattan,Pothole,4.09,1.2,2.11,1.35,0.15,8.52,High,High,High
+73,Brooklyn,Sidewalk Condition,1.67,1.0,2.26,1.8,1.12,6.85,Medium,Medium,Medium
+1319,Bronx,Pothole,3.83,1.1,1.85,1.66,1.36,9.08,High,High,High
+938,Bronx,Pothole,4.13,1.0,1.13,1.37,1.17,7.8,High,High,High
+472,Brooklyn,Sidewalk Condition,2.15,1.5,2.23,0.03,1.63,7.12,High,Medium,High
+1280,Queens,Sidewalk Condition,2.46,1.3,1.15,0.84,0.68,5.87,Medium,Medium,Medium
+1487,Queens,Sidewalk Condition,1.64,1.0,0.52,0.85,1.43,4.44,Medium,Medium,Low
+1783,Brooklyn,Pothole,4.37,1.1,2.11,2.0,0.77,9.69,High,High,High
+725,Brooklyn,Sidewalk Condition,1.84,1.1,2.24,1.04,1.23,6.53,Medium,Medium,Medium
+1133,Manhattan,Pothole,3.98,1.2,1.3,2.0,0.28,8.36,High,High,High
+1930,Manhattan,Street Condition,3.49,1.1,3.0,1.7,0.4,8.94,High,High,High
+1879,Manhattan,Street Condition,2.78,1.5,0.98,1.17,0.91,7.23,High,High,High
+1424,Queens,Pothole,4.43,1.3,1.76,0.76,1.08,9.36,High,High,High
+1281,Queens,Pothole,3.8,1.0,1.15,0.81,1.33,7.09,High,High,High
+264,Bronx,Street Condition,3.19,1.2,2.58,1.8,1.03,9.24,High,High,High
+867,Bronx,Street Condition,2.74,1.0,2.28,1.78,1.49,8.29,High,High,High
+1391,Bronx,Sidewalk Condition,1.89,1.0,2.58,1.26,0.99,6.72,Medium,Medium,Medium
+1976,Queens,Pothole,4.26,1.4,1.66,1.36,0.89,9.87,High,High,High
