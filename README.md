@@ -45,7 +45,7 @@ No installation required. All dependencies are pre-installed in Colab.
 
 ### Option 2 — Local
 ```bash
-git clone https://github.com/YOUR_USERNAME/citypulse-ai-dashboard.git
+git clone https://github.com/monkeycruch/CityPulseAI-CityTech-.git
 cd citypulse-ai-dashboard
 pip install -r requirements.txt
 jupyter notebook notebooks/CityPulse_AI_Model.ipynb
