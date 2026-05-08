@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CityPulse AI — NYC Road Damage Intelligence</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Barlow', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #0f0f0f;
+            color: #e0e0e0;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .container {
+            display: flex;
+            height: 100vh;
+            flex-direction: row;
+        }
+
+        .sidebar {
+            width: 380px;
+            background: #1a1a1a;
+            border-right: 1px solid #333;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        .header {
+            padding: 20px;
+            border-bottom: 1px solid #333;
+            background: linear-gradient(135deg, #1a1a1a 0%, #222 100%);
+        }
+
+        .header h1 {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            background: linear-gradient(90deg, #ff6b35 0%, #f7931e 50%, #fbb034 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .header p {
+            font-size: 12px;
+            color: #888;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+            padding: 12px 20px;
+            border-bottom: 1px solid #333;
+        }
+
+        .stat {
+            background: #222;
+            border: 1px solid #333;
+            border-radius: 6px;
+            padding: 12px;
+            text-align: center;
+        }
+
+        .stat .value {
+            font-size: 18px;
+            font-weight: 700;
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        .stat .label {
+            font-size: 10px;
+            color: #666;
+            margin-top: 4px;
+            text-transform: uppercase;
+        }
+
+        .stat.critical .value { color: #ff4444; }
+        .stat.high .value { color: #ff8844; }
+        .stat.medium .value { color: #ffcc44; }
+        .stat.low .value { color: #44ff44; }
+
+        .filters {
+            padding: 16px 20px;
+            border-bottom: 1px solid #333;
+        }
+
+        .filter-group {
+            margin-bottom: 12px;
+        }
+
+        .filter-label {
+            font-size: 11px;
+            font-weight: 600;
+            color: #888;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+        }
+
+        .tier-buttons, .borough-buttons {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 6px;
+        }
+
+        .borough-buttons {
+            grid-template-columns: 1fr;
+        }
+
+        .btn {
+            padding: 10px 12px;
+            background: #222;
+            border: 1px solid #333;
+            border-radius: 4px;
+            color: #999;
+            font-size: 12px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .btn:hover {
+            border-color: #555;
+            color: #bbb;
+        }
+
+        .btn.active {
+            border-color: #ff6b35;
+            color: #ff6b35;
+            background: rgba(255, 107, 53, 0.1);
+        }
+
+        .queue-container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        .queue-header {
+            padding: 12px 20px;
+            border-bottom: 1px solid #333;
+            font-size: 12px;
+            font-weight: 600;
+            color: #666;
+            text-transform: uppercase;
+        }
+
+        .queue {
+            flex: 1;
+            overflow-y: auto;
+            padding: 8px 0;
+        }
+
+        .queue::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        .queue::-webkit-scrollbar-track {
+            background: #1a1a1a;
+        }
+
+        .queue::-webkit-scrollbar-thumb {
+            background: #333;
+            border-radius: 3px;
+        }
+
+        .incident {
+            padding: 12px 16px;
+            border-bottom: 1px solid #222;
+            cursor: pointer;
+            transition: all 0.15s ease;
+            border-left: 3px solid transparent;
+        }
+
+        .incident:hover {
+            background: #222;
+            border-left-color: #ff6b35;
+        }
+
+        .incident-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 6px;
+        }
+
+        .incident-type {
+            font-size: 12px;
+            font-weight: 600;
+            color: #ddd;
+        }
+
+        .incident-score {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 13px;
+            font-weight: 700;
+            color: #ff6b35;
+        }
+
+        .incident-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 11px;
+            color: #888;
+        }
+
+        .tier-badge {
+            display: inline-block;
+            padding: 2px 6px;
+            border-radius: 2px;
+            font-size: 10px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .tier-badge.critical { background: rgba(255, 68, 68, 0.2); color: #ff4444; }
+        .tier-badge.high { background: rgba(255, 136, 68, 0.2); color: #ff8844; }
+        .tier-badge.medium { background: rgba(255, 204, 68, 0.2); color: #ffcc44; }
+        .tier-badge.low { background: rgba(68, 255, 68, 0.2); color: #44ff44; }
+
+        #map {
+            flex: 1;
+            background: #0f0f0f;
+        }
+
+        .incident-marker {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            border: 2px solid white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 10px;
+            font-weight: 700;
+            cursor: pointer;
+        }
+
+        .incident-marker.critical { background: #ff4444; color: white; }
+        .incident-marker.high { background: #ff8844; color: white; }
+        .incident-marker.medium { background: #ffcc44; color: #333; }
+        .incident-marker.low { background: #44ff44; color: #333; }
+
+        .data-source {
+            padding: 12px 20px;
+            border-top: 1px solid #333;
+            font-size: 10px;
+            color: #666;
+            text-align: center;
+        }
+
+        .api-badge {
+            display: inline-block;
+            background: rgba(68, 255, 68, 0.15);
+            color: #44ff44;
+            padding: 2px 6px;
+            border-radius: 2px;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 20px;
+            color: #888;
+        }
+
+        .error {
+            background: rgba(255, 68, 68, 0.1);
+            border: 1px solid #ff4444;
+            color: #ff8844;
+            padding: 12px 16px;
+            border-radius: 4px;
+            margin: 12px;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="header">
+                <h1>CityPulse AI</h1>
+                <p>NYC Road Damage Intelligence • Live API Data</p>
+            </div>
+
+            <div class="stats">
+                <div class="stat critical">
+                    <div class="value" id="stat-critical">—</div>
+                    <div class="label">Critical</div>
+                </div>
+                <div class="stat high">
+                    <div class="value" id="stat-high">—</div>
+                    <div class="label">High</div>
+                </div>
+                <div class="stat medium">
+                    <div class="value" id="stat-medium">—</div>
+                    <div class="label">Medium</div>
+                </div>
+                <div class="stat low">
+                    <div class="value" id="stat-low">—</div>
+                    <div class="label">Low</div>
+                </div>
+            </div>
+
+            <div class="filters">
+                <div class="filter-group">
+                    <div class="filter-label">Priority Tier</div>
+                    <div class="tier-buttons">
+                        <button class="btn active" data-tier="Critical">Critical</button>
+                        <button class="btn active" data-tier="High">High</button>
+                        <button class="btn active" data-tier="Medium">Medium</button>
+                        <button class="btn active" data-tier="Low">Low</button>
+                    </div>
+                </div>
+
+                <div class="filter-group">
+                    <div class="filter-label">Borough</div>
+                    <div class="borough-buttons">
+                        <button class="btn active" data-borough="ALL">All Boroughs</button>
+                        <button class="btn" data-borough="Brooklyn">Brooklyn</button>
+                        <button class="btn" data-borough="Queens">Queens</button>
+                        <button class="btn" data-borough="Manhattan">Manhattan</button>
+                        <button class="btn" data-borough="Bronx">Bronx</button>
+                        <button class="btn" data-borough="Staten Island">Staten Island</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="queue-container">
+                <div class="queue-header">Priority Queue</div>
+                <div class="queue" id="queue">
+                    <div class="loading">Loading data...</div>
+                </div>
+            </div>
+
+            <div class="data-source">
+                <span class="api-badge">LIVE API</span>
+                <p style="margin-top: 6px; font-size: 9px; color: #555;">Fetching from FastAPI backend</p>
+                <div id="api-status" style="margin-top: 4px; font-size: 8px; color: #444;"></div>
+            </div>
+        </div>
+
+        <div id="map"></div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script>
+        // ════════════════════════════════════════ CONFIGURATION ════════════════════════════════════════
+        // CHANGE THIS to your ngrok URL from Colab output
+        const API_URL = 'https://macaroni-headcount-crepe.ngrok-free.dev';
+        
+        // For example: const API_URL = 'https://abc123-456.ngrok-free.app';
+
+        // ════════════════════════════════════════ STATE ════════════════════════════════════════
+        let map;
+        let markers = {};
+        let INCIDENT_DATA = [];
+        let activeTiers = new Set(['Critical', 'High', 'Medium', 'Low']);
+        let activeBorough = 'ALL';
+
+        // ════════════════════════════════════════ FETCH DATA ════════════════════════════════════════
+        async function loadData() {
+            try {
+                document.getElementById('api-status').textContent = 'Connecting...';
+                
+                const response = await fetch(API_URL + '/api/incidents?limit=10000', {
+                    headers: { 'ngrok-skip-browser-warning': 'true' }
+                });
+                if (!response.ok) throw new Error(`HTTP ${response.status}`);
+                
+                INCIDENT_DATA = await response.json();
+                document.getElementById('api-status').textContent = `✓ ${INCIDENT_DATA.length} incidents`;
+                
+                console.log(`✅ Loaded ${INCIDENT_DATA.length} incidents from API`);
+                
+                initMap();
+                render();
+            } catch (error) {
+                console.error('❌ Failed to load data:', error);
+                document.getElementById('queue').innerHTML = `
+                    <div class="error">
+                        <strong>Connection Error</strong><br>
+                        Cannot reach API at: ${API_URL}<br><br>
+                        <strong>Did you:</strong><br>
+                        1. Copy the ngrok URL from Colab?<br>
+                        2. Update the API_URL in this HTML?<br>
+                        3. Keep the Colab backend running?
+                    </div>
+                `;
+                document.getElementById('api-status').textContent = '✗ Connection failed';
+            }
+        }
+
+        // ════════════════════════════════════════ MAP ════════════════════════════════════════
+        function initMap() {
+            if (!window.L) {
+                console.error('Leaflet.js not loaded');
+                return;
+            }
+            
+            map = L.map('map').setView([40.7128, -74.0060], 11);
+
+            L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+                attribution: '© OpenStreetMap © CartoDB',
+                subdomains: 'abcd',
+                maxZoom: 19
+            }).addTo(map);
+        }
+
+        function getTierColor(tier) {
+            switch(tier) {
+                case 'Critical': return '#ff4444';
+                case 'High': return '#ff8844';
+                case 'Medium': return '#ffcc44';
+                case 'Low': return '#44ff44';
+                default: return '#999';
+            }
+        }
+
+        function createMarker(incident) {
+            const el = document.createElement('div');
+            el.className = 'incident-marker ' + incident.tier.toLowerCase();
+            el.textContent = incident.score.toFixed(1);
+
+            const marker = L.marker([incident.lat, incident.lon], {
+                icon: L.divIcon({
+                    html: el.outerHTML,
+                    iconSize: [24, 24],
+                    className: ''
+                })
+            });
+
+            marker.on('click', () => selectIncident(incident.id));
+            markers[incident.id] = marker;
+            return marker;
+        }
+
+        function selectIncident(incidentId) {
+            const incident = INCIDENT_DATA.find(i => i.id == incidentId);
+            if (incident && markers[incidentId]) {
+                map.flyTo([incident.lat, incident.lon], 14);
+            }
+        }
+
+        // ════════════════════════════════════════ RENDER ════════════════════════════════════════
+        function render() {
+            if (!map || INCIDENT_DATA.length === 0) return;
+
+            // Clear markers
+            Object.values(markers).forEach(m => map.removeLayer(m));
+            markers = {};
+
+            // Filter
+            const filtered = INCIDENT_DATA.filter(i => {
+                if (!activeTiers.has(i.tier)) return false;
+                if (activeBorough !== 'ALL' && i.borough !== activeBorough) return false;
+                return true;
+            });
+
+            // Stats
+            document.getElementById('stat-critical').textContent = filtered.filter(i => i.tier === 'Critical').length;
+            document.getElementById('stat-high').textContent = filtered.filter(i => i.tier === 'High').length;
+            document.getElementById('stat-medium').textContent = filtered.filter(i => i.tier === 'Medium').length;
+            document.getElementById('stat-low').textContent = filtered.filter(i => i.tier === 'Low').length;
+
+            // Sort and render markers
+            filtered.sort((a, b) => b.score - a.score);
+            filtered.forEach(incident => {
+                const marker = createMarker(incident);
+                marker.addTo(map);
+            });
+
+            // Queue (top 20)
+            const queueEl = document.getElementById('queue');
+            queueEl.innerHTML = filtered.slice(0, 20).map(i => `
+                <div class="incident" onclick="selectIncident(${i.id})">
+                    <div class="incident-header">
+                        <span class="incident-type">${i.complaint.substring(0, 20)}</span>
+                        <span class="incident-score">${i.score.toFixed(1)}</span>
+                    </div>
+                    <div class="incident-meta">
+                        <span>${i.borough}</span>
+                        <span class="tier-badge ${i.tier.toLowerCase()}">${i.tier}</span>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // ════════════════════════════════════════ FILTERS ════════════════════════════════════════
+        document.querySelectorAll('[data-tier]').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const tier = btn.getAttribute('data-tier');
+                if (activeTiers.has(tier)) {
+                    activeTiers.delete(tier);
+                    btn.classList.remove('active');
+                } else {
+                    activeTiers.add(tier);
+                    btn.classList.add('active');
+                }
+                render();
+            });
+        });
+
+        document.querySelectorAll('[data-borough]').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('[data-borough]').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                activeBorough = btn.getAttribute('data-borough');
+                render();
+            });
+        });
+
+        // ════════════════════════════════════════ INIT ════════════════════════════════════════
+        window.addEventListener('load', loadData);
+    </script>
+</body>
+</html>
