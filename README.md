@@ -57,9 +57,10 @@ CityPulseAI-CityTech-/
 
 ### 2 — FastAPI Backend
 1. Open `notebooks/CityPulse_Backend.ipynb` in Google Colab
-2. Run all 5 cells in order
-3. Cell 5 outputs a public ngrok URL — keep this cell running
-4. Copy the URL into the dashboard HTML
+2. Add your ngrok token to Colab Secrets as `NGROK_AUTHTOKEN` with Notebook access ON
+3. Run all 5 cells in order
+4. Cell 5 outputs a public ngrok URL — keep this cell running
+5. Copy the URL into the dashboard HTML
 
 ### 3 — Dashboard
 1. Open `dashboard/citypulse_dashboard_api.html` in a text editor
