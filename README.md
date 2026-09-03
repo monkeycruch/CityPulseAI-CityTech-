@@ -186,7 +186,7 @@ pyngrok
 - [ ] Connect Team 1 CV model output for real severity scores
 - [ ] Replace borough-level impact proxy with PostGIS spatial join
 - [ ] Add live OpenWeatherMap API calls
-- [ ] Deploy backend to self-hosted server (Docker + Portainer)
+- [x] Deploy backend to self-hosted server (Docker + Portainer)
 - [ ] Add choropleth equity map by neighborhood
 - [ ] Add plain-English explanation per incident
 
