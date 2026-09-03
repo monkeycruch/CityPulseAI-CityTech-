@@ -162,6 +162,10 @@ def score_dataframe(df, validate=True):
     ...     'accessibility': [1.5, 1.0, 0.5],
     ... })
     >>> score_dataframe(df)[['priority_score', 'priority_tier']]
+       priority_score priority_tier
+    0           11.00      Critical
+    1            6.25        Medium
+    2            2.80           Low
     """
     import pandas as pd
 
@@ -193,6 +197,16 @@ def explain_score(severity, weather, impact, complaints, accessibility):
     Examples
     --------
     >>> print(explain_score(4.0, 1.3, 2.5, 1.8, 1.5))
+    Priority Score:  11.00 / 14.5
+    Priority Tier:   Critical — Within 24 hours
+    <BLANKLINE>
+    Score breakdown:
+      Severity × Weather   = 4.0 × 1.3 = 5.2
+      Impact               = 2.5
+      Complaints           = 1.8
+      Accessibility        = 1.5
+      ─────────────────────────────────────
+      Total                = 11.00
     """
     score = score_incident(severity, weather, impact, complaints,
                            accessibility, validate=False)
