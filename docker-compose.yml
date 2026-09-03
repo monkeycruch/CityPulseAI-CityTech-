@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  backend:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./samples:/app/samples
+    environment:
+      - DATA_PATH=/app/samples/citypulse_real_311_scored.csv
+    restart: unless-stopped
+    container_name: citypulse-backend
